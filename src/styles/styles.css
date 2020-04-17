@@ -64,4 +64,62 @@ header nav a.activo {
 
 .pelicula-principal .contenedor {
   margin: 0 auto;
+  margin-bottom: 6.25em; /* 100px */
+}
+
+.pelicula-principal .pelicula-principal__titulo {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.pelicula-principal .pelicula-principal__descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula-principal .pelicula-principal__boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula-principal .pelicula-principal__boton:hover {
+  background: #fff;
+  color: #000;
+}
+
+.pelicula-principal .pelicula-principal__boton i {
+  margin-right: 1.25em;
+}
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+  header .contenedor__logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .pelicula-principal {
+    font-size: 14px;
+  }
+
+  .pelicula-principal .pelicula-principal__descripcion {
+    max-width: 100%;
+  }
 }
