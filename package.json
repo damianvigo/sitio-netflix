@@ -1,0 +1,11 @@
+{
+  "name": "sitio-netflix",
+  "version": "1.0.0",
+  "description": "pagina tipo netflix con html5-css3-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Vigo <damiandanielvigo@gmail.com> (https://damianvigo.com)",
+  "license": "MIT"
+}
