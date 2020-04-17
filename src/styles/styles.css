@@ -26,4 +26,23 @@ haeder {
 header .contenedor {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header .contenedor__logotipo {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #fff;
 }
