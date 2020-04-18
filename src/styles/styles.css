@@ -183,6 +183,23 @@ header nav a.activo {
   flex-wrap: nowrap;
 }
 
+.peliculas-recomendadas__contenedor-principal__contenedor-carousel__carousel__pelicula {
+  min-width: 20%; /* 5 imaganes */
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.peliculas-recomendadas__contenedor-principal__contenedor-carousel__carousel__pelicula.hover {
+  /* clase hover para trabajar con js */
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.peliculas-recomendadas__contenedor-principal__contenedor-carousel__carousel__pelicula img {
+  width: 100%;
+  vertical-align: top;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 800px) {
@@ -203,5 +220,21 @@ header nav a.activo {
 
   .pelicula-principal__descripcion {
     max-width: 100%;
+  }
+
+  .peliculas-recomendadas__contenedor-principal__contenedor-carousel {
+    overflow: visible;
+  }
+
+  .peliculas-recomendadas__contenedor-principal__contenedor-carousel__carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .peliculas-recomendadas__contenedor-titulo-controles__indicadores,
+  .peliculas-recomendadas__contenedor-principal__flecha-izquierda,
+  .peliculas-recomendadas__contenedor-principal__flecha-derecha {
+    display: none;
   }
 }
